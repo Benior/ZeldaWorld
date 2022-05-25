@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda World</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .tmsocial {
+            width: 50px;
+            width: 50px;
+        }
+    </style>
+
+<script>
+    // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+        var forms = document.getElementsByClassName('needs-validation');
+        // Faz um loop neles e evita o envio
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+
+</head>
+
+<body class="bg-secondary">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top" id="inicio">
+        <div>
+            <a class="navbar-brand" href="#">
+                <img src="assets/badge-zelda.svg" width="30" height="30" class="d-inline-block align-content-center" alt="">
+                Zelda World
+              </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Notícias
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#novidades">Novidades</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#gameplays">Gameplays</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#curiosidades">Curiosidades</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#cards">Ranking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contato">Contatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.youtube.com/c/TerminalMontage" target="_blank">Canal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white"
+                        href="https://media2.giphy.com/media/Urc6CzW703XFajktll/giphy.gif?cid=ecf05e47mu4q3a0r2m4y8z0o2wcs7my5fyoxxb5zxbtkmjjy&rid=giphy.gif&ct=g" target="_blank">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/Navbar-->
+
+    <!--Carrosel-->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.imgur.com/jVC6Txb.png" class="d-block w-100" alt="The Legend of curiosidades!">
+                <div class="carousel-caption d-none d-md-block bg-dark text-white font-weight-bold">
+                    <h5>The Legend of curiosidades!</h5>
+                    <p>Confira 12 curiosidades sobre a franquia The Legend of Zelda!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.imgur.com/iBXsfd9.png" class="d-block w-100" alt="Não é só a Zelda que é uma lend">
+                <div class="carousel-caption d-none d-md-block bg-dark text-white font-weight-bold">
+                    <h5>Não é só a Zelda que é uma lenda</h5>
+                    <p>Jogador de Zelda destrói Guardian de jeito espetacular e ensina como fazer!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.imgur.com/QsZF9om.png" class="d-block w-100" alt="ALERTA DE SPOILER!">
+                <div class="carousel-caption d-none d-md-block bg-dark text-white font-weight-bold">
+                    <h5>ALERTA DE SPOILER!</h5>
+                    <p>Dublador pode ter dado spoilers de Breath of the Wild 2</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+    <!--/Carrosel-->
+
+    <!--jumbotron-->
+    <div class="jumbotron jumbotron-fluid" id="cards">
+        <div class="container">
+            <h1 class="display-4">Ranking da franquia</h1>
+            <p class="lead">Os jogos mais vendidos da franquia até hoje</p>
+        </div>
+    </div>
+    <!--/jumbotron-->
+
+    <!--Cards-->
+    <div class="container-fluid">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/0/0f/Legend_of_Zelda_Breath_of_the_Wild_capa.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Em primeiro lugar o ultimo jogo lançado da franquia The Legend of
+                                Zelda:
+                                Breath of the Wild. jogo avaliado com 9,6 pela comunidade</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/6/61/The_Legend_of_Zelda_Twilight_Princess_capa.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Em segundo lugar temos o The Legend of Zelda: Twilight Princess. Jogo
+                                avaliado com 9,3 pela comunidade</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card" style="width: 18rem;">
+                        <img src="https://www.bonusstage.com.br/wp-content/uploads/2011/06/legend-of-zelda-ocarina-of-time-cover.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Em terceiro lugar um classico que nunca morre, The Legend of Zelda:
+                                Ocarina
+                                of Time, a versão clássica conta com a nota 9,6 contra a sua remasterização que conta
+                                com a
+                                nota 9,3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cards-->
+
+    <!--jumbotron-->
+    <div class="jumbotron jumbotron-fluid bg-danger text-white">
+        <div class="container text-center">
+            <h1 class="display-4">Notícias</h1>
+            <p class="lead">As notícias mais populares de Hyrule</p>
+        </div>
+    </div>
+    <!--/jumbotron-->
+
+    <!--Novidades-->
+    <div class="container-fluid mt-5 p-5" id="novidades">
+        <div class="container text-center text-white p-5">
+            <h1>ALERTA DE SPOILER!</h1>
+            <p>Dublador pode ter dado spoilers de Breath of the Wild 2</p>
+            <div class="container-fluid">
+                <div class="container align-content-center">
+                    <div class="row mt-5 ">
+                        <div class="col-md-auto">
+                            <p class="text-justify">Com o adiamento da sequência de The Legend of Zelda: Breath of the
+                                Wild
+                                para 2023, os fãs terão
+                                que
+                                esperar mais um pouco para saber mais informações sobre o aguardado título. Mas um
+                                detalhe
+                                muito
+                                importante pode ter sido revelado antes da hora por um ator de voz italiano.</p>
+
+                            <p class="font-weight-bold text-center">[Atenção: esta matéria pode conter spoilers da
+                                sequência de The Legend
+                                of Zelda: Breath of the
+                                Wild!]</p>
+
+                            <p class="text-justify">Em uma conversa com o site italiano de fãs Lega Hyrule, Pietro
+                                Ubaldi,
+                                que emprestou sua voz para
+                                Daruk no jogo original, revelou que recentemente gravou falas para a sequência.
+                                Curiosamente, ele
+                                dublou um segundo personagem inédito.
+
+                                De acordo com Ubaldi, ele também fez a voz de um "antepassado de Daruk", que é uma
+                                "versão
+                                mais
+                                séria" do Campeão Goron. Infelizmente, ele diz não se lembrar do nome do personagem e
+                                nem
+                                deu outras
+                                informações sobre o trabalho.</p>
+
+                            <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/f3/BotW_Daruk_Artwork.png/revision/latest?cb=20170213043818"
+                                alt="Daruk-campeão-piloto-de-Vah-Rudania" class="w-75">
+
+                            <p class="text-justify">O fato de um antepassado de Daruk aparecer já é combustível mais do
+                                que suficiente para a
+                                especulação começar. Uma das teorias é que os jogadores voltarão no tempo, 10 mil anos
+                                no passado, na era em que o herói e os Campeões derrotaram Calamity Ganon pela primeira
+                                vez.
+                                Também pode se tratar de um flashback e Link terá acesso às memórias desta outra era, em
+                                busca de informações para consertar a Master Sword e derrotar Ganondorf. Outra
+                                possibilidade
+                                é que o herói simplesmente encontrará estes personagens do passado em forma de espírito,
+                                assim como os Campeões apareceram no jogo original.
+
+                                Uma coisa é certa: teorias sobre o novo jogo é o que não faltam. Seja como for, é
+                                provável
+                                que a gente só descubra a resposta quando o jogo for lançado, em 2023. Até lá, você pode
+                                se
+                                preparar zerando The Legend of Zelda: Breath of the Wild e conferindo 12 curiosidades
+                                sobre
+                                a aclamada franquia da Nintendo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Novidades-->
+
+    <!--Gameplays-->
+    <div class="container-fluid bg-dark p-5" id="gameplays">
+        <div class="container text-center text-white p-5">
+            <h1>Não é só a Zelda que é uma lenda</h1>
+            <p>Jogador de Zelda destrói Guardian de jeito espetacular e ensina como fazer!</p>
+            <div class="container-fluid">
+                <div class="container align-content-center">
+                    <div class="rowmt-5 ">
+                        <div class="col-md-auto">
+                            <p class="text-justify">Zelda: Breath of the Wild é aquele tipo de game que vai ter
+                                jogadores descobrindo e inventando coisas pelo resto da vida - talvez até mesmo depois
+                                da continuação ser lançada. A novidade da vez é um vídeo de um jogador japonês que se
+                                identifica como Blurry Cat, e mostra a destruição de um dos Guardians do game de um
+                                jeito que você nunca viu:</p>
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q4sMILT3wVQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="mb-5 mt-5"></iframe>
+
+                            <p class="text-justify">Em mais ou menos 20 segundos temos uma manobra radical, com
+                                direito
+                                à pausa no ar, e depois uma execução de golpe de espada que lança o Guardian pelos ares
+                                a metros de distância. O espetáculo é finalizado pela tradicional caminhada em direção à
+                                câmera, sem olhar para trás, enquanto o pobre Guardian explode lá longe.
+
+                                A manobra por si só já é muito interessante, mas o vídeo fica mais bacana ainda porque
+                                Blurry Cat ensina como fez - e não, não foram necessários mods! Todos os movimentos e o
+                                golpe final podem ser feitos na sua cópia original de Zelda: Breath of the Wild, só vão
+                                exigir muita prática e paciência.
+
+                                Não usar mods não significa que o jogador não aproveitou algumas "brechas" do game pra
+                                fazer algo tão incrível. Além do domínio do Thunderclap Rush, de usar uma chu chu jelly
+                                no momento certo e outros efeitos de habilidades especiais, a manobra exige ainda
+                                aproveitar o glitch de bombas que faz o Link voar, bug especialmente amado pelos
+                                speedrunners.
+
+                                Com certeza não é o tipo de coisa que todo mundo vai querer aprender a fazer, mas talvez
+                                vamos ver mais vídeos do tipo aparecendo, de outros jogadores experimentando com a
+                                receita de Blurry Cat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Gameplays-->
+
+    <!--Curiosidades-->
+    <div class="container-fluid mt-5 p-5" id="curiosidades">
+        <div class="container text-center text-white p-5">
+            <h1>The Legend of Curiosidades!</h1>
+            <p>The Legend of Zelda: confira 12 curiosidades sobre a franquia!</p>
+            <div class="container-fluid">
+                <div class="container align-content-center">
+                    <div class="row mt-5 ">
+                        <div class="col-md-auto">
+                            <p class="text-justify">The Legend of Zelda é uma série de jogos criados pela Nintendo a
+                                partir dos anos 80 e foi um dos primeiros RPGs eletrônicos a fazer muito sucesso no
+                                mundo todo. A história se passa no reino de Hyrule, onde o protagonista, Link, que é um
+                                jovem herói pertencente à raça Hylian, enfrenta várias aventuras que se desenrolam nos
+                                diversos jogos da franquia.
+
+                                Se você é um dos incontáveis fãs do universo de The Legend of Zelda, este texto é
+                                especial para você. Confira a seguir 12 curiosidades sobre a série da Nintendo.</p>
+                            <!--curiosidade 1-->
+                            <p class="font-weight-bold text-left mt-5">1. A série Zelda começa pelo fim</p>
+
+                            <img src="https://img.ibxk.com.br/2022/04/07/07182503578394.jpg?ims=704x"
+                                alt="Daruk-campeão-piloto-de-Vah-Rudania" class="w-75 mb-3">
+
+                            <p class="text-justify">Cronologicamente falando, o primeiro jogo The Legend of Zelda, de
+                                1986, seria o último. A lógica é a seguinte: os dois primeiros jogos acontecem em um
+                                universo alternativo no qual Link não conseguiu derrotar Ganon em The Ocarina of Time,
+                                lançado em 1996.
+
+                                Pela ordem do tempo, o jogo Skyward Sword, de 2011, seria o primeiro da série. Por mais
+                                que pareça confuso, faz sentido para uma série que fala também sobre viagens no tempo.
+                            </p>
+                            <!--curiosidade 2-->
+                            <p class="font-weight-bold text-left mt-5">2. Link é canhoto</p>
+
+                            <img src="https://img.ibxk.com.br/2022/04/07/07183619969401.jpg?ims=704x"
+                                alt="Daruk-campeão-piloto-de-Vah-Rudania" class="w-75 mb-3">
+
+                            <p class="text-justify">Na maioria dos jogos, o herói de The Legend of Zelda é retratado
+                                como canhoto. Isto acontece nos jogos de Nintendo, Super Nintendo, Gameboy, Gamecube,
+                                Nintendo DS e Nintendo 64. A exceção é o jogo Twilight Princess para Wii, em que Link é
+                                retratado como destro.
+                            </p>
+                            <!--curiosidade 3-->
+                            <p class="font-weight-bold text-left mt-5">3. O nome Zelda foi tirado da literatura</p>
+
+                            <img src="https://img.ibxk.com.br/2022/04/07/07185912342410.jpg?ims=704x"
+                                alt="Daruk-campeão-piloto-de-Vah-Rudania" class="w-75 mb-3">
+
+                            <p class="text-justify">O nome da princesa mais famosa da Nintendo saiu da literatura. Zelda
+                                faz referência a Zelda Fitzgerald, romancista, poetisa e pintora, que foi casada com o
+                                escritor F. Scott Fitzgerald.
+                            </p>
+                            <!--curiosidade 4-->
+                            <p class="font-weight-bold text-left mt-5">4. O jogo tem uma homenagem a um falecido CEO da
+                                Nintendo</p>
+
+                            <img src="https://img.ibxk.com.br/2022/04/07/07193544688429.jpg?ims=704x"
+                                alt="Daruk-campeão-piloto-de-Vah-Rudania" class="w-75 mb-3">
+
+                            <p class="text-justify">No jogo Breath of the Wild, de 2017, há uma bela montanha chamada
+                                Satori, que Link escala. A montanha foi nomeada em homenagem a Satoru Iwata, programador
+                                e empresário japonês que atuou como diretor da Nintendo de 2002 até 2015, quando morreu
+                                de câncer.
+                            </p>
+
+                            <!--curiosidade 5-->
+                            <p class="font-weight-bold text-left mt-5">5. Há um crossover entre The Legend of Zelda e
+                                Super Mario Bros</p>
+
+                            <img src="https://img.ibxk.com.br/2022/04/07/07203158613473.jpg?ims=704x"
+                                alt="Daruk-campeão-piloto-de-Vah-Rudania" class="w-75 mb-3">
+
+                            <p class="text-justify">Sabe-se que Shigeru Miyamoto tentou manter os universos de Zelda e
+                                Mario tão separados quanto fosse possível. Porém, há um cruzamento entre as duas
+                                franquias. Em alguns momentos da série Zelda, aparece um inimigo chamado "Piranha
+                                Plant". Ele é mais conhecido por ser a praga que suja o cachimbo de Mario.
+
+                                Mario também homenageou Zelda. Em Super Mario Bros 3, há um efeito sonoro saído do apito
+                                mágico da série de RPG. Além disso, Mario e Link apareceram juntos em vários
+                                merchandisings da Nintendo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Curiosidades-->
+
+    <!--formulário-->
+    <div class="container-fluid bg-dark p-5" id="contato">
+        <div class="container text-center text-white">
+            <h1>Deixe uma mensagem!</h1>
+            <p>Tem aluma novidade ou fofoca gamer para a gente, manda!</p>
+            <div class="row">
+                <div class="col-6">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group text-left">
+                            <label for="exampleFormControlInput1">Seu e-mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com" required>
+                            <div class="valid-feedback">
+                                    Tudo certo no e-mail
+                            </div>
+                            <div class="invalid-feedback">
+                                    Humm esse e-mail não parece válido.
+                            </div>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="exampleFormControlSelect1">Motivo da mensagem</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1 - Crítica</option>
+                                <option>2 - Elogio</option>
+                                <option>3 - Fofoca gamer</option>
+                                <option>4 - Parceria</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="exampleFormControlTextarea1">Diz ai como posso ajudar?</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensagem" rows="3" required></textarea>
+                                <div class="valid-feedback">
+                                        Tudo certo com a mensagem
+                                </div>
+                                <div class="invalid-feedback">
+                                        Peralá lá, cadê a mensagem?
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success float-left" href="#novidades" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form col-6 text-left">
+                    <p>Rua dos Bobos, n°0 - Centro, Londrina - PR CEP: 86020-060</p>
+
+                    <iframe class="w-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.1378608788364!2d-51.17391518443241!3d-23.310756358271767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb44a5cb8fffff%3A0x1600719f9cc06b97!2sArt%20Deco!5e0!3m2!1spt-BR!2sbr!4v1652987449489!5m2!1spt-BR!2sbr"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        id="mapa"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/formulário-->
+
+    <!--footer-->
+    <footer class="bg-light">
+        <div class="container align-content-center p-3">
+
+            <div class="row d-flex justify-content-center ">
+                <a href="https://www.instagram.com/beniord" target="_blank"><img class="tmsocial mr-2 ml-2"
+                        src="https://www.svgrepo.com/show/111199/instagram.svg" target="_blank"></a>
+                <a href="https://github.com/Benior" target="_blank"><img class="tmsocial mr-2 ml-2"
+                        src="https://www.svgrepo.com/show/341847/github.svg" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/beniorcardoso/" target="_blank"><img class="tmsocial mr-2 ml-2"
+                        src="https://www.svgrepo.com/show/75820/linkedin.svg" target="_blank"></a>
+                <a href="mailto:benior.santos@gmail.com" target="_blank"><img class="tmsocial mr-2 ml-2"
+                        src="https://www.svgrepo.com/show/353812/google-gmail.svg" target="_blank"></a>
+            </div>
+            <div class="container text-center">
+                <p class="center mb-0">
+                    Direitos reservads a Benior Cardoso &copy;
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!--footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
