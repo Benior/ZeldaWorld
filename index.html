@@ -132,7 +132,7 @@
     <!--/Carrosel-->
 
     <!--jumbotron-->
-    <div class="jumbotron jumbotron-fluid" id="cards">
+    <div class="jumbotron jumbotron-fluid mb-0" id="cards">
         <div class="container">
             <h1 class="display-4">Ranking da franquia</h1>
             <p class="lead">Os jogos mais vendidos da franquia até hoje</p>
@@ -141,42 +141,34 @@
     <!--/jumbotron-->
 
     <!--Cards-->
-    <div class="container-fluid">
-        <div class="container p-5">
-            <div class="row">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://upload.wikimedia.org/wikipedia/pt/0/0f/Legend_of_Zelda_Breath_of_the_Wild_capa.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Em primeiro lugar o ultimo jogo lançado da franquia The Legend of
-                                Zelda:
-                                Breath of the Wild. jogo avaliado com 9,6 pela comunidade</p>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="card-deck p-5">
+            <div class="card" style="width: 18rem;">
+                <img src="https://1.bp.blogspot.com/-dWeC85Kg0Mg/WLgNmgUtM1I/AAAAAAAAVcE/kzy3_0QzVRUVAjEc8YWUKxLNrPS83CX7ACLcB/s1600/zelda-breath-wild-capa.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Em primeiro lugar o ultimo jogo lançado da franquia The Legend of
+                        Zelda:
+                        Breath of the Wild. jogo avaliado com 9,6 pela comunidade</p>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://upload.wikimedia.org/wikipedia/pt/6/61/The_Legend_of_Zelda_Twilight_Princess_capa.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Em segundo lugar temos o The Legend of Zelda: Twilight Princess. Jogo
-                                avaliado com 9,3 pela comunidade</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/wiiu_14/SI_WiiU_TheLegendOfZeldaTwilightPrincessHD_image1600w.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Em segundo lugar temos o The Legend of Zelda: Twilight Princess. Jogo
+                        avaliado com 9,3 pela comunidade</p>
                 </div>
-                <div class="col">
-                    <div class="card card" style="width: 18rem;">
-                        <img src="https://www.bonusstage.com.br/wp-content/uploads/2011/06/legend-of-zelda-ocarina-of-time-cover.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Em terceiro lugar um classico que nunca morre, The Legend of Zelda:
-                                Ocarina
-                                of Time, a versão clássica conta com a nota 9,6 contra a sua remasterização que conta
-                                com a
-                                nota 9,3</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card card" style="width: 18rem;">
+                <img src="https://archive.org/download/the-legend-of-zelda-ocarina-of-time-usa_202012/SI_N64_LegendOfZeldaOcarinaOfTime_image1600w.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Em terceiro lugar um classico que nunca morre, The Legend of Zelda:
+                        Ocarina
+                        of Time, a versão clássica conta com a nota 9,6 contra a sua remasterização que conta
+                        com a
+                        nota 9,3</p>
                 </div>
             </div>
         </div>
@@ -408,7 +400,7 @@
                             <label for="exampleFormControlInput1">Seu Nome</label>
                             <input type="text" class="form-control" id="nome" onkeyup="validaNome()" value=""
                                 placeholder="Seu nome aqui" required>
-                                <div id="txtNome"></div>
+                            <div id="txtNome"></div>
                             <div class="valid-feedback">
                                 O nome está certo!
                             </div>
@@ -420,7 +412,7 @@
                             <label for="exampleFormControlInput1">Seu e-mail</label>
                             <input type="email" class="form-control" id="email" onkeyup="validaEmail()" value=""
                                 placeholder="name@example.com" required>
-                                <div id="txtEmail"></div>
+                            <div id="txtEmail"></div>
                             <div class="valid-feedback">
                                 Tudo certo no e-mail!
                             </div>
@@ -449,7 +441,8 @@
                                 Peralá lá, cadê a mensagem?
                             </div>
                             <div class="mt-2">
-                                <button class="btn btn-success float-left" onclick="enviar()" type="submit">Enviar</button>
+                                <button class="btn btn-success float-left" onclick="enviar()"
+                                    type="submit">Enviar</button>
                             </div>
                         </div>
 
